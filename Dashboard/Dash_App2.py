@@ -13,7 +13,7 @@ from dash import Dash
 from flask import Flask, send_from_directory
 from .Dash_fun import apply_layout_with_auth, load_object, save_object
 url_base = '/dash/app2/'
-UPLOAD_DIRECTORY = "C:/Users/lappy/Desktop/project/files"
+UPLOAD_DIRECTORY = "C:/Users/lappy/Desktop/itc website/Dashboard/files"
 
 if not os.path.exists(UPLOAD_DIRECTORY):
     os.makedirs(UPLOAD_DIRECTORY)
