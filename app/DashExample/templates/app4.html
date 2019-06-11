@@ -41,23 +41,23 @@
         
       </div>
     </div>
-    <div class="col-md-12" role="main">
-      <br>
-      <img src="/static/images/snip5.png" alt="Paris" style="width:100%;">
-      <p class="black";style="padding:0 15px;"></p>
-      <br><br>
-      <font size="3";font color="black"><h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Strength V/S Frequency Plot</h1>
+  <div class="col-md-12" role="main">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="dashboard_graph">
+          <div style="width: 100%; min-height:600px;" >
+            <iframe 
+              noresize='noresize' 
+              style='position: absolute; background:white; width: 95%; height:100%;' 
+              src={{ dash_url }}
+              frameborder="0">
+            </iframe>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
     </div>
-    <div class="col-md-6" role="main">
-      <img src="/static/images/snip7.png" alt="Paris" style="width:140%;">
- 
-    </div>
-    <div class="col-md-6" role="main">
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="/static/images/snip6.png" alt="Paris" style="width:50%;">
-    </div>
-    <div class="col-md-12" role="main">
-      <img src="/static/images/snip9.png" alt="Paris" style="width:100%;">
-    </div>
+  </div>
 {% endblock content %}
 
 {% block javascripts %}

@@ -33,8 +33,7 @@ def download(path):
 
 layout = html.Div(
     [
-        html.H1("File Browser"),
-        html.H2("Upload a CPT report to analyse the sentiments"),
+        html.H1("Upload a CPT report for Analysis"),
         dcc.Upload(
             id="upload-data",
             children=html.Div(

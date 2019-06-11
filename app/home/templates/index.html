@@ -11,43 +11,44 @@
     <!-- top tiles -->
     <div class="row tile_count">
       <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
-        <span class="count_top"><i class="fa fa-user"></i>  Number of CPTs conducted</span>
-        <div class="count">10</div>
+        <span class="count_top"><i class="fa fa-user"></i><font color="blue">   Number of CPTs conducted</span>
+        <div class="count red">10</div>
         <span class="count_bottom"><i class="green"></i></span>
       </div>
       <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
-        <span class="count_top"><i class="fa fa-clock-o"></i>  Number of Brands compared</span>
-        <div class="count">3</div>
+        <span class="count_top"><i class="fa fa-user"></i><font color="blue">  Number of Brands compared</span>
+        <div class="count red">3</div>
       </div>
       <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
-        <span class="count_top"><i class="fa fa-user"></i>  Cities</span>
-        <div class="count green">4</div>
+        <span class="count_top"><i class="fa fa-user"></i><font color="blue">  Cities</span>
+        <div class="count red">4</div>
         
       </div>
       <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
-        <span class="count_top"><i class="fa fa-user"></i> Total number of Reviews</span>
-        <div class="count">5000</div>
+        <span class="count_top"><i class="fa fa-user"></i><font color="blue">  Total number of Reviews</span>
+        <div class="count red">5000</div>
         
       </div>
       <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
-        <span class="count_top"><i class="fa fa-user"></i>  Date of Last CPT</span>
-        <div class="count">2/10/19</div>
+        <span class="count_top"><i class="fa fa-user"></i><font color="blue">  Date of Last CPT</span>
+        <div class="count red">2/10/19</div>
         
       </div>
       <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
-        <span class="count_top"><i class="fa fa-user"></i>  Competition Brands</span>
-        <div class="count">MGA,</div>
+        <span class="count_top"><i class="fa fa-user"></i><font color="blue">  Competition Brands</span>
+        <div class="count red">MGA,</div>
         
       </div>
     </div>
     <!-- /top tiles -->
 
-    <div class="row">
+
+    <div class="row" style="background-color:white;">
 
       <div class="col-md-6 col-sm-6 col-xs-12">
         <div class="x_panel">
           <div class="x_title">
-            <h1>METHODOLOGY <small></small></h1>
+            <h1 style="text-align:center;"><b><font color="blue">METHODOLOGY</b><small></small></h1>
             <ul class="nav navbar-right panel_toolbox">
               <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
               </li>
@@ -72,15 +73,13 @@
                   <div class="block">
                     <div class="block_content">
                       <h3 class="title">
-                                        <a>Step 1: Cleaning the Dataset</a>
+                                        <a><font color="rgb(0,0,0)"><b>Step 1: Cleaning the Dataset</b></a>
                                     </h3>
 
-                      <p class="excerpt">(1) Stopwords Remvoal - Removal of '.' , ',' , '!' and other stop words from the review statements of the customers.
-                      </p>
-                      <p class="excerpt">(2) Converting numbers to words. 
-                      </p>                      
-                      <p class="excerpt">(3) Lammatization - It refers to doing things properly with the use of a vocabulary and morphological analysis of words, normally aiming to remove inflectional endings only and to return the base or dictionary form of a word, which is known as the lemma . 
-                      <p class="excerpt">(4) Word vector generation
+                      <p class="excerpt"><font size="3";font color="rgb(0,0,200)"><b>(1) Stopwords Remvoal</b>  -  Removal of '.' , ',' , '!' and other stop words from the review statements of the customers.
+                      </p>                    
+                      <p class="excerpt"><font color="rgb(0,0,200)"><b>(2) Lemmatization</b> - It refers to doing things properly with the use of a vocabulary and morphological analysis of words, normally aiming to remove inflectional endings only and to return the base or dictionary form of a word, which is known as the lemma . 
+                      <p class="excerpt"><b>(3) Word vector generation</b>
                       </p>
                     </div>
                   </div>
@@ -89,14 +88,14 @@
                   <div class="block">
                     <div class="block_content">
                       <h3 class="title">
-                                        <a>Step 2: LSTM Model</a>
+                                        <a><font color="rgb(0,0,0)"><b>Step 2: LSTM Model</b></a>
                                     </h3>
                  
-                      <p class="excerpt">Long Short Term Memory networks – usually just called “LSTMs” – are a special kind of RNN, capable of learning long-term dependencies.
+                      <p class="excerpt"><font size="3";font color="rgb(0,0,200)"><b>Long Short Term Memory networks</b> – usually just called “LSTMs” – are a special kind of RNN, capable of learning long-term dependencies.
                         LSTMs are explicitly designed to avoid the long-term dependency problem. Remembering information for long periods of time is practically their default behavior, not something they struggle to learn!
                       </p>
                       </p>
-                      <p class="excerpt">We used an LSTM model for Sentiment Analysis and got an accuracy of around 95%.
+                      <p class="excerpt"><font size="3";font color="blue">We used an LSTM model for Sentiment Analysis and got an accuracy of around 95%.
                       </p>
                     </div>
                   </div>
@@ -105,12 +104,12 @@
                   <div class="block">
                     <div class="block_content">
                       <h3 class="title">
-                                        <a>Step 3: Keyword Generation</a>
+                                        <a><font color="rgb(0,0,0)"><b>Step 3: Keyword Generation</b></a>
                                     </h3>
 
-                      <p class="excerpt">(1)POS(Part of Speech) tagging to identify the important keywords driving the sentiments to extremes
+                      <p class="excerpt"><font size="3";font color="rgb(0,0,200)"><b>(1) POS (Part of Speech)</b> tagging to identify the important keywords driving the sentiments to extremes
                       </p>
-                      <p class="excerpt">(2)Ordering keywords on the basis of strength. 
+                      <p class="excerpt"><font size="3";font color="rgb(0,0,200)">(2)Ordering keywords on the basis of<b> strength</b>. 
                       </p>                      
                     </div>
                   </div>
@@ -119,24 +118,24 @@
                   <div class="block">
                     <div class="block_content">
                       <h3 class="title">
-                                        <a>Strength Calculation</a>
+                                        <a><font color="rgb(0,0,0)"><b>Strength Calculation</b></a>
                                     </h3>
                       
-                      <p class="excerpt">Strength of a word is defined as the distance weighted sentiment average of the nearest neighbor of the word.
+                      <p class="excerpt"><font size="3";font color="rgb(0,0,200)">Strength of a word is defined as the distance weighted sentiment average of the nearest neighbor of the word.
                       </p>
-                      <p class="excerpt">Nearest Neighbors of Nice- [Cigarette, enjoy, awesome, first, say]
+                      <p class="excerpt"><font size="3";font color="blue">Nearest Neighbors of Nice-<b> [Cigarette, enjoy, awesome, first, say]</b>
                       </p>
-                      <p class="excerpt">Sentiment of a word is defined as the average of sentiments of all the sentences carrying the word
+                      <p class="excerpt"><font size="3";font color="rgb(0,0,200)">Sentiment of a word is defined as the average of sentiments of all the sentences carrying the word
                       </p>
-                      <b class="excerpt">Example of strength calculation:
+                      <b class="excerpt"><font size="3";font color="rgb(0,0,200)">Example of strength calculation:
                       </b>
-                      <p class="excerpt">Strength of Nice = Sentiment[Cigarette]*Similarity[Cigarette-Nice]+ 
+                      <p class="excerpt"><font size="3";font color="rgb(0,0,200)">Strength of Nice = Sentiment[Cigarette]*Similarity[Cigarette-Nice]+ 
                       </p>
-                      <p class="excerpt">Sentiment[Enjoy]*Similarity[Enjoy-Nice]+ Sentiment[Awesome]*Similarity[Awesome-Nice]+
+                      <p class="excerpt"><font size="3";font color="rgb(0,0,200)">Sentiment[Enjoy]*Similarity[Enjoy-Nice]+ Sentiment[Awesome]*Similarity[Awesome-Nice]+
                       </p>
-                      <p class="excerpt">Sentiment[say]*Similarity[say-Nice]+ Sentiment[first]*Similarity[first-Nice]
+                      <p class="excerpt"><font size="3";font color="rgb(0,0,200)">Sentiment[say]*Similarity[say-Nice]+ Sentiment[first]*Similarity[first-Nice]
                       </p>
-                      <b class="excerpt">Strength of Nice= 0.7*0.7+0.9*0.8+0.95*0.4+0.5*0.3+0.2*0.2=1.78
+                      <b class="excerpt"><font size="3";font color="blue">Strength of Nice= 0.7*0.7+0.9*0.8+0.95*0.4+0.5*0.3+0.2*0.2=1.78
                       </b>
 
                     </div>
@@ -146,10 +145,10 @@
                   <div class="block">
                     <div class="block_content">
                       <h3 class="title">
-                                        <a>P/N Sentiment Ratio</a>
+                                        <a><font color="rgb(0,0,0)";font color="rgb(0,0,200)"><b>P/N Sentiment Ratio</b></a>
                                     </h3>
                       
-                      <p class="excerpt">It is the ratio of the Positive reviews to the number of negative reviews.
+                      <p class="excerpt"><font size="3";font color="rgb(0,0,200)">It is the ratio of the Positive reviews to the number of negative reviews.
                       </p>
                     </div>
                   </div>
@@ -163,7 +162,7 @@
       <div class="col-md-6 col-sm-6 col-xs-12">
         <div class="x_panel tile fixed_height_320">
           <div class="x_title">
-            <h2> ITC V/S COMPETITION </h2>
+            <h2><b><font color="blue"><b>ITC V/S COMPETITION</b></font></b></h2>
             <ul class="nav navbar-right panel_toolbox">
               <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
               </li>
@@ -182,10 +181,11 @@
             <div class="clearfix"></div>
           </div>
           <div class="x_content">
-            <h3> Review Sentiment Anaysis</h3>
+            <h3><font color="rgb(0,0,0)"><b> Review Sentiment Anaysis</b></h3>
+
             <div class="widget_summary">
               <div class="w_left w_25">
-                <span>ITC Positives</span>
+                <span><b>ITC Positives</b></span>
               </div>
               <div class="w_center w_55">
                 <div class="progress">
@@ -202,7 +202,7 @@
 
             <div class="widget_summary">
               <div class="w_left w_25">
-                <span>Competition Positives</span>
+                <span><b>Competition Positives</b></span>
               </div>
               <div class="w_center w_55">
                 <div class="progress">
@@ -218,7 +218,7 @@
             </div>
             <div class="widget_summary">
               <div class="w_left w_25">
-                <span>ITC negatives</span>
+                <span><b>ITC negatives</b></span>
               </div>
               <div class="w_center w_55">
                 <div class="progress">
@@ -234,7 +234,7 @@
             </div>
             <div class="widget_summary">
               <div class="w_left w_25">
-                <span>Competition Negatives</span>
+                <span><b>Competition Negatives</b></span>
               </div>
               <div class="w_center w_55">
                 <div class="progress">
@@ -253,28 +253,42 @@
         </div>
       </div>
       <div class="col-md-6 col-sm-6 col-xs-12">
-        <h2> Have a look at some previous analysis </h2>
-        <script>
-          var images = ['/static/images/2.png','/static/images/3.png','/static/images/4.png','/static/images/5.png'];
-          var index = 0;
+        <h2><b></b></h2>
+        <div class="w3-content w3-section" style="max-width:500px">
+        <img class="mySlides" src="/static/images/s1.jpg" style="width:100%">
+        <img class="mySlides" src="/static/images/s3.jpg" style="width:100%">
+        <img class="mySlides" src="/static/images/s4.jpg" style="width:100%">
+        <img class="mySlides" src="/static/images/s6.jpg" style="width:100%">        
+        <img class="mySlides" src="/static/images/s7.jpg" style="width:100%">
+        <img class="mySlides" src="/static/images/s8.png" style="width:100%">
+        <img class="mySlides" src="/static/images/s9.jpg" style="width:100%">
+        <img class="mySlides" src="/static/images/s10.jpg" style="width:100%">
+        <img class="mySlides" src="/static/images/s11.png" style="width:100%">
+        <img class="mySlides" src="/static/images/s12.jpeg" style="width:100%">
+        <img class="mySlides" src="/static/images/s13.webp" style="width:100%">
+        <img class="mySlides" src="/static/images/s14.gif" style="width:100%">
+        <img class="mySlides" src="/static/images/s15.png" style="width:100%">
 
-          function buildImage() {
-            var img = document.createElement('img')
-            img.src = images[index];
-            document.getElementById('content').appendChild(img);
-          }
 
-          function changeImage(){
-            var img = document.getElementById('content').getElementsByTagName('img')[0]
-            index++;
-            index = index % images.length; // This is for if this is the last image then goto first image
-            img.src = images[index];
-          }
-        </script>
+      </div>
 
-        <body onload="buildImage();">
-            <div class="contents" id="content"></div>
-            <button onclick="changeImage()">NextImage</button>
+      <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 1500); // Change image every 2 seconds
+      }
+      </script>
+
         </body>
       </div> 
       

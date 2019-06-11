@@ -35,7 +35,6 @@ def route_errors(error):
 
 ## Login & Registration
 
-
 @blueprint.route('/login', methods=['GET', 'POST'])
 def login():
     login_form = LoginForm(request.form)

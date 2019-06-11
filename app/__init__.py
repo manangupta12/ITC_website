@@ -3,7 +3,7 @@ from flask_login import current_user
 from .extensions import db, login_manager
 from importlib import import_module
 from .base.models import User
-from Dashboard import Dash_App1, Dash_App2
+from Dashboard import Dash_App1, Dash_App2,Dash_App3,Dash_App4
 from os import path
 import logging
 
@@ -84,4 +84,7 @@ def create_app(config, selenium=False):
     apply_themes(app)
     app = Dash_App1.Add_Dash(app)
     app = Dash_App2.Add_Dash(app)
+    app = Dash_App3.Add_Dash(app)
+    app = Dash_App4.Add_Dash(app)
+
     return app
